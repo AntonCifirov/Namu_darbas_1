@@ -1,0 +1,10 @@
+Vardas                   Pavarde                    ND1       ND2       ND3       ND4       ND5       ND6       ND7      Egz.
+Jeff                    Beck                          3        10         8         1         7         4         6         2
+Tony                    Stark                         9         8         4         6         3         4         8         7
+Hugh                    Jackman                       8        10         9         8        10         9         8         8
+Elizabeth               Williams                      7         8         8         3         8         5         7         4
+Marry                   Smith                         9         3         6        10         7         9         4         5
+Michael                 Brown                         9         7         4         6         8         2         8         9
+Richard                 Jones                         8         4         2         3         1         2         9         1
+Patricia                Rodriguez                     8         5         7         8         1         4         3         8
+Robert                  Wilson                        4         1        10         9        10         6         9         3
