@@ -58,39 +58,7 @@ void RemoveStudent(vector<duom>& students, int gal) {
         remove_if(students.begin(), students.end(), [&](duom const& stud) {return stud.gal < gal; }), students.end());
 }
 
-/*
-vector<duom> Failo_rusiavimas_vargseliai(vector<duom> asmuo_vector)
-{
 
-    vector<duom> varg_vector;
-    for (vector<duom>::iterator it = asmuo_vector.begin(); it != asmuo_vector.end();)
-    {
-        cout << (*it).var << endl;
-        if ((*it).gal < 5)
-        {
-            varg_vector.push_back(*it);
-            cout <<"Deleting: " <<(*it).var << endl;
-            cout << "Deleting: " << (*it).pav << endl;
-            cout << "Deleting: " << (*it).gal << endl;
-
-
-            asmuo_vector.erase(it);
-            cout<<(*it).pav << endl;
-            cout << "_____" << endl;
-
-        }
-        else
-        {
-            it++;
-        }
-        //cout << iter << endl;
-        //cout << iter << endl;
-
-    }
-
-    return varg_vector;
-
-}*/
 
 vector<duom> Failo_rusiavimas_vargseliai(vector<duom> asmuo_vector)
 {
@@ -163,7 +131,7 @@ void Isvedimas_i_failus(string failo_pavadinimas, vector<duom> asmuo_vector)
     ofstream studentai_varg(failo_pavadinimas1, ios::out, ios::trunc);
     ofstream studentai_kiet(failo_pavadinimas2, ios::out, ios::trunc);
 
-    auto start = std::chrono::high_resolution_clock::now(); //timerio prad엍a
+    auto start = std::chrono::high_resolution_clock::now(); //timerio prad탑ia
 
     vector<duom> varg = Failo_rusiavimas_vargseliai(asmuo_vector);
     vector<duom> kiet = Failo_rusiavimas_kietakai(asmuo_vector);
@@ -174,7 +142,7 @@ void Isvedimas_i_failus(string failo_pavadinimas, vector<duom> asmuo_vector)
 
 
 
-    auto start1 = std::chrono::high_resolution_clock::now(); //timerio1 prad엍a
+    auto start1 = std::chrono::high_resolution_clock::now(); //timerio1 prad탑ia
 
     //Pirmos eilutes isvedimas i failus Vargseliai ir Kietakai
     studentai_varg << "Vardas          Pavarde          Galutinis (vid.)      Galutinis (med.)" << endl;
@@ -221,7 +189,7 @@ void Isvedimas_i_failus(string failo_pavadinimas, list<duom> asmuo_list)
     ofstream studentai_varg(failo_pavadinimas1, ios::out, ios::trunc);
     ofstream studentai_kiet(failo_pavadinimas2, ios::out, ios::trunc);
 
-    auto start = std::chrono::high_resolution_clock::now(); //timerio prad엍a
+    auto start = std::chrono::high_resolution_clock::now(); //timerio prad탑ia
 
     list<duom> varg = Failo_rusiavimas_vargseliai(asmuo_list);
     list<duom> kiet = Failo_rusiavimas_kietakai(asmuo_list);
@@ -232,7 +200,7 @@ void Isvedimas_i_failus(string failo_pavadinimas, list<duom> asmuo_list)
 
 
 
-    auto start1 = std::chrono::high_resolution_clock::now(); //timerio1 prad엍a
+    auto start1 = std::chrono::high_resolution_clock::now(); //timerio1 prad탑ia
 
     //Pirmos eilutes isvedimas i failus Vargseliai ir Kietakai
     studentai_varg << "Vardas          Pavarde          Galutinis (vid.)      Galutinis (med.)" << endl;
